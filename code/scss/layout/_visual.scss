@@ -1,0 +1,134 @@
+@use '../foundation/_variable' as *;
+@use '../foundation/_mixin' as *;
+
+.l-visual {
+    width: 100%;
+    position: relative;
+    h2 {
+        color: #fff;
+        font-size: 5rem;
+        font-weight: bold;
+    }
+    &__title {
+        font-size: 4rem;
+        position: absolute;
+        top: calc(50% - 4rem);
+        left: 6vw;
+        line-height: 4rem;
+        span {
+            font-size: 15px;
+            vertical-align: top;
+        }
+    }
+}
+
+// -----------------------------------------------------------------
+// front
+// -----------------------------------------------------------------
+.l-visual.-front {
+    display: flex;
+    align-items: center;
+    height: 285px;
+    padding-left: 25px;
+    margin-bottom: 30px;
+    @include background("main-bg-tab");
+    background-size: cover;
+    background-position: center center;
+
+    @include mq('tab') {
+        @include background("main-bg-pc");
+        background-size: cover;
+        background-position: center center;
+        margin-bottom: 40px;
+    }
+    @include mq('pc') {
+        height: 530px;
+    }
+}
+
+// -----------------------------------------------------------------
+// achive
+// -----------------------------------------------------------------
+.l-visual.-archive {
+    height: 500px;
+    @include background("archive-bg-sp");
+    background-size: cover;
+    position: relative;
+    @include mq('tab') {
+        height: 285px;
+        @include background("archive-bg-pc");
+        background-size: cover;
+        background-position: center center;
+    }
+    @include mq('pc') {
+        height: 285px;
+        @include background("archive-bg-pc");
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+// -----------------------------------------------------------------
+// single
+// -----------------------------------------------------------------
+.l-visual.-single {
+    height: 285px;
+    @include background("single-bg-sp");
+    background-size: cover;
+    background-position: center center;
+    @include mq('tab') {
+        height: 500px;
+        @include background("single-bg-pc");
+        background-position: 60% 50%;
+    }
+    @include mq('pc') {
+        height: 500px;
+        @include background("single-bg-pc");
+        background-position: center center;
+    }
+    h1 {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        color: #fff;
+        font-size: 4.5rem;
+        font-weight: bold;
+    }
+}
+
+// -----------------------------------------------------------------
+// page
+// -----------------------------------------------------------------
+.l-visual.-page {
+    height: 285px;
+    @include background("shop-bg-sp");
+    background-size: cover;
+    background-position: center center;
+    @include mq('tab') {
+        height: 500px;
+        @include background("shop-bg-pc");
+        background-position: center center;
+    }
+    @include mq('pc') {
+        height: 500px;
+        @include background("shop-bg-pc");
+        background-position: center center;
+    }
+    h1 {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        color: #fff;
+        font-size: 4.5rem;
+        font-weight: bold;
+    }
+}
+
+.l-visual.-layer {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}

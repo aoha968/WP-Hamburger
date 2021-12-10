@@ -1,0 +1,69 @@
+@use '../../foundation/_variable' as *;
+@use '../../foundation/_mixin' as *;
+
+.p-access {
+    position: relative;
+    width: 100%;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: calc(20px + 3%);
+    padding-right: calc(20px + 3%);
+    @include mq('pc') {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -3;
+    }
+
+    .c-layer.-rear {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#000, 0.3);
+        z-index: -2;
+    }
+    .c-layer.-front {
+        width: 100%;
+        height: 60%;
+        background-color: rgba(#000, 0.4);
+        z-index: -1;
+        @include mq('tab') {
+            height: 100%;
+        }
+        @include mq('pc') {
+            width: 60%;
+        }
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        line-height: 2;
+        @include mq('pc') {
+            width: 60%;
+            padding: 1%;
+        }
+        h2 {
+            position: relative;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 75px;
+                height: 3px;
+                background-color: #fff;
+                bottom: -18px;
+                left: 0;
+            }
+        }
+    }
+}

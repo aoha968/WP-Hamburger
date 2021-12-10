@@ -1,0 +1,30 @@
+.c-list {
+    width: 100%;
+    font-size: 16px;
+    padding: 6px;
+    ol {
+        font-family: 'M PLUS 1p';
+        line-height: 1.6;
+        counter-reset: count 0;
+        li {
+            list-style: none;
+            &:before {
+                content: counter(count) ". ";
+                counter-increment: count 1;
+            }
+            ol {
+                padding: 30px 20px;
+            }
+        }
+    }
+    ul {
+        font-family: 'M PLUS 1p';
+        line-height: 1.6;
+        padding-top: 60px;
+        li {
+            ul {
+                padding: 30px 20px;
+            }
+        }
+    }
+}

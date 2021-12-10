@@ -1,0 +1,20 @@
+@use '../../foundation/_variable' as *;
+
+.l-header {
+    &__menu-btn {
+        color:#707070;
+        border: none;               /* 枠線を消す */
+        outline: none;              /* クリックしたときに表示される枠線を消す */
+        background: transparent;    /* 背景の灰色を消す */
+    }
+    &__form{
+
+        &__btn {
+            border-radius: 10px;
+            border: solid 1px #707070;
+            color: #707070;
+            background: linear-gradient(#f2ede9 0%, #ded8d3 100%);
+            cursor: pointer;
+        }
+    }
+}

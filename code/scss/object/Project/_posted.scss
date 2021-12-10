@@ -1,0 +1,99 @@
+@use '../../foundation/_variable' as *;
+@use '../../foundation/_mixin' as *;
+
+.posted {
+    font-family: 'M PLUS 1p';
+    font-size: 1.4rem;
+    line-height: 2;
+    margin: 0 40px;
+    @include mq('pc') {
+        width: 90%;
+    }
+    
+    &__title {
+        margin: 30px 0px;
+        h2 {
+            margin-bottom: 30px;
+            font-size: 3.6rem;
+            font-weight: 600;
+        }
+        h3 {
+            font-size: 3.2rem;
+            font-weight: 600;
+        }
+        h4, h5, h6 {
+            font-size: 2.8rem;
+            font-weight: 600;
+        }
+    }
+    .c-backquote {
+        margin-bottom: 30px;
+        padding: 50px;
+        p {
+            padding-bottom: 50px;
+        }
+    }
+
+    .c-column li {
+        margin-bottom: 40px;
+        .image {
+            width: 45%;
+        }
+        .text {
+            width: 55%;
+        }
+        &:nth-child(even) .text {
+            padding-right: 10px;
+        }
+        &:nth-child(odd) .text {
+            padding-left: 10px;
+        }
+    }
+
+    .c-tile {
+        &__list {
+            margin: 10px 0 10px 0;
+            @include mq('tab') {
+                width:calc((100% - 20px) / 2);
+                &:nth-child(2n){
+                    margin: 0 10px 0 10px;
+                }
+            }
+            @include mq('pc') {
+                width:calc((100% - 20px) / 3);
+                &:nth-child(2n){
+                    margin: 0;          // タブレット時のmarginを打ち消し
+                }
+                &:nth-child(3n + 2){
+                    margin: 0 10px 0 10px;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        padding-bottom: 60px;
+        button {
+            background-color: #F2EDE9;
+            border: solid 1px;
+            border-radius: 30px;
+            a {
+                display: block;
+                width: 430px;
+                color: #3C2A10;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 100px;
+            }
+        }
+    }
+    &__text {
+        width: 100%;
+        margin-bottom: 300px;
+        p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}

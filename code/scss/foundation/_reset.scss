@@ -1,0 +1,41 @@
+@use './_variable' as *;
+
+html {
+    font-size: 62.5%;
+}
+body {
+    color: #3C2A10;
+    font-family:'Roboto', 'M PLUS 1p','ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-size: 1.6rem;
+    /* bodyとfooterの隙間をなくす */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+article {
+    display: block;
+}
+aside{
+    display: block;
+}
+a{
+    color: $text-black;
+    text-decoration: none;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+dd {
+    margin-left: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+button, input, form {
+    padding: 0;
+    margin: 0;
+}
