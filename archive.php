@@ -1,36 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <meta charset="utf-8">
-        <title>Hamburger</title>
-        <meta name="description" content="Hamburger">
-        <meta name="viewport" contetn="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="./img/favicon.ico">
-
-        <!-- CSS -->
-        <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
-        <link rel="stylesheet" href="./public/css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script type="text/javascript" src="./js/main.js"></script>
+        <?php get_header(); ?> 
     </head>
 
     <body>
         <main class="l-main">
             <div class="l-main__container">
-                <header class="l-header">
-                    <button class="l-header__menu-btn">Menu</button>
-                    <a href="#"><h1 class="l-header__logo">Hamburger</h1></a>
-                    <form class="l-header__form">
-                        <div class="l-header__form__wrap">
-                            <input type="text" class="l-header__form__search">
-                        </div>
-                        <button type="submit" name="" class="l-header__form__btn" value="">検索</button>
-                    </form>
-                </header>
+                <?php get_template_part('includes/header'); ?>
 
                 <article class="l-main__content">
                     <div class="l-visual -archive">
@@ -102,44 +79,10 @@
                     </div>
                 </article>
             </div>
-            <div class="l-sidebar__bg"></div>
-            <aside class="l-sidebar">
-                <h2>Menu</h2>
-                <button class="c-menu__btn"><span>close</span></button>
-                <h3><a href="#">バーガー</a></h3>
-                <ul>
-                    <li><a href="#">ハンバーガー</a></li>
-                    <li><a href="#">チーズバーガー</a></li>
-                    <li><a href="#">テリヤキバーガー</a></li>
-                    <li><a href="#">アボカドバーガー</a></li>
-                    <li><a href="#">フィッシュバーガー</a></li>
-                    <li><a href="#">ベーコンバーガー</a></li>
-                    <li><a href="#">チキンバーガー</a></li>
-                </ul>
-                <h3><a href="#">サイド</a></h3>
-                <ul>
-                    <li><a href="#">ポテト</a></li>
-                    <li><a href="#">サラダ</a></li>
-                    <li><a href="#">ナゲット</a></li>
-                    <li><a href="#">コーン</a></li>
-                </ul>
-                <h3><a href="#">ドリンク</a></h3>
-                <ul>
-                    <li><a href="#">コーラ</a></li>
-                    <li><a href="#">ファンタ</a></li>
-                    <li><a href="#">オレンジ</a></li>
-                    <li><a href="#">アップル</a></li>
-                    <li><a href="#">紅茶（Ice/Hot）</a></li>
-                    <li><a href="#">コーヒー（Ice/Hot）</a></li>
-                </ul>
-            </aside>
+            <?php get_sidebar(); ?>
         </main>
 
-        <footer class="l-footer">
-            <ul>
-                <li>ショップ情報　|　ヒストリー</li>
-            </ul>
-            <address>Copyright: RaiseTech</address>
-        </footer>
+        <?php get_template_part('includes/footer'); ?>
+        <?php get_footer(); ?>
     </body>
 </html>
