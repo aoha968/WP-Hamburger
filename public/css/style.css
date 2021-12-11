@@ -693,12 +693,12 @@ button, input, form {
   margin-bottom: 20px;
 }
 .p-card__list.-takeout {
-  background: url(../../../img/takeout.png) no-repeat;
+  background: url(../../img/takeout.png) no-repeat;
   background-size: cover;
   background-position: center center;
 }
 .p-card__list.-eatin {
-  background: url(../../../img/eatin.png) no-repeat;
+  background: url(../../img/eatin.png) no-repeat;
   background-size: cover;
   background-position: center center;
 }
