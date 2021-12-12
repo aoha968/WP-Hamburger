@@ -15,26 +15,30 @@
                     </div>
                     <ul class="p-card">
                         <li class="p-card__list -takeout">
-                            <h2>Take Out</h2>
-                            <dl>
-                                <dt>Take OUT</dt>
-                                <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-                            </dl>
-                            <dl>
-                                <dt>Take OUT</dt>
-                                <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-                            </dl>
+                            <a href="<?php echo esc_url( home_url('/take-out') ); ?>">
+                                <h2>Take Out</h2>
+                                <dl>
+                                    <dt>Take OUT</dt>
+                                    <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Take OUT</dt>
+                                    <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                </dl>
+                            </a>
                         </li>
                         <li class="p-card__list -eatin">
-                            <h2>Eat In</h2>
-                            <dl>
-                                <dt>Take OUT</dt>
-                                <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-                            </dl>
-                            <dl>
-                                <dt>Take OUT</dt>
-                                <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-                            </dl>
+                            <a href="<?php echo esc_url( home_url('/eat-in') ); ?>">
+                                <h2>Eat In</h2>
+                                <dl>
+                                    <dt>Take OUT</dt>
+                                    <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Take OUT</dt>
+                                    <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                </dl>
+                            </a>
                         </li>
                     </ul>
                     <section class="p-access">

@@ -22,39 +22,25 @@
                             <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         </div>
                         <ul class="wrap__menu">
-                            <li class="wrap__menu__list">
-                                <img S src="../img/archive_contents.png">
-                                <div class="wrap__menu__list__detail">
-                                    <h2>チーズバーガー</h2>
-                                    <h3>小見出しが入ります</h3>
-                                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                                    <div class="wrap__menu__list__detail__btn">
-                                        <button type="button">詳しく見る</button>
-                                    </div>
-                                </div>
-                            </li>
+                            <?php
+                                if (have_posts()) :
+                                    while (have_posts()) :
+                                        the_post();
+                            ?>
                             <li class="wrap__menu__list">
                                 <img src="../img/archive_contents.png">
                                 <div class="wrap__menu__list__detail">
-                                    <h2>ダブルチーズバーガー</h2>
-                                    <h3>小見出しが入ります</h3>
-                                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                                    <h2><?php the_title(); ?></h2>
+                                    <h3><?php the_excerpt(); ?></h3>
+                                    <p><?php the_content(); ?></p>
                                     <div class="wrap__menu__list__detail__btn">
-                                        <button type="button">詳しく見る</button>
+                                    <a href="<?php the_permalink(); ?>"><button type="button">詳しく見る</button></a>
                                     </div>
                                 </div>
                             </li>
-                            <li class="wrap__menu__list">
-                                <img src="../img/archive_contents.png">
-                                <div class="wrap__menu__list__detail">
-                                    <h2>スペシャルチーズバーガー</h2>
-                                    <h3>小見出しが入ります</h3>
-                                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                                    <div class="wrap__menu__list__detail__btn">
-                                        <button type="button">詳しく見る</button>
-                                    </div>
-                                </div>
-                            </li>
+                            <?php   endwhile; ?>
+                            <?php else : ?>
+                            <?php endif; ?>
                         </ul>
                     </div>
                     <div class="c-pagenation">
