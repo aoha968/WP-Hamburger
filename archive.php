@@ -28,7 +28,11 @@
                                         the_post();
                             ?>
                             <li class="wrap__menu__list">
-                                <img src="../img/archive_contents.png">
+                                <?php if(has_post_thumbnail()): ?>
+                                    <?php the_post_thumbnail('large'); ?>
+                                <?php else: ?>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/archive_contents.png">
+                                <?php endif; ?>
                                 <div class="wrap__menu__list__detail">
                                     <h2><?php the_title(); ?></h2>
                                     <h3><?php the_excerpt(); ?></h3>

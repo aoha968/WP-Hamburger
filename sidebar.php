@@ -4,20 +4,25 @@
     <button class="c-menu__btn"><span>close</span></button>
     <h3><a href="#">バーガー</a></h3>
     <ul>
-        <li><a href="#">ハンバーガー</a></li>
-        <li><a href="#">チーズバーガー</a></li>
-        <li><a href="#">テリヤキバーガー</a></li>
-        <li><a href="#">アボカドバーガー</a></li>
-        <li><a href="#">フィッシュバーガー</a></li>
-        <li><a href="#">ベーコンバーガー</a></li>
-        <li><a href="#">チキンバーガー</a></li>
+        <?php
+            $args = array(
+                'menu' => 'global-navigation-hamburger',      /* 管理画面で作成したメニューの名前 */
+                'menu_class' => '',                           /* メニューを構成するulタグのクラス名 */
+                'container' => false,                         /* ulタグを囲んでいるdivタグを削除 */
+            );
+            wp_nav_menu($args);
+        ?>
     </ul>
     <h3><a href="#">サイド</a></h3>
     <ul>
-        <li><a href="#">ポテト</a></li>
-        <li><a href="#">サラダ</a></li>
-        <li><a href="#">ナゲット</a></li>
-        <li><a href="#">コーン</a></li>
+        <?php
+            $args = array(
+                'menu' => 'global-navigation-side',           /* 管理画面で作成したメニューの名前 */
+                'menu_class' => '',                           /* メニューを構成するulタグのクラス名 */
+                'container' => false,                         /* ulタグを囲んでいるdivタグを削除 */
+            );
+            wp_nav_menu($args);
+        ?>
     </ul>
     <h3><a href="#">ドリンク</a></h3>
     <ul>
