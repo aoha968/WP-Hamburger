@@ -1,6 +1,7 @@
 /*======================================
 windowサイズ変更処理
 ========================================*/
+var $ = jQuery.noConflict();
 $(window).resize(function(){
     var window_width = window.innerWidth;
     var pc_width = 1025;
