@@ -15,4 +15,14 @@
     }
     add_action('wp_enqueue_scripts', 'Hamburger_script');
 
+    /* サイドバーを出力するにあたっての整形する関数 */
+    class custom_walker_nav_menu extends Walker_Nav_Menu {
+        function start_lvl(&$output, $depth = 0, $args = array()) {
+            $output .= '<ul>';
+        }
+        function end_lvl(&$output, $depth = 0, $args = array()) {
+            $output .= '</ul>';
+        }
+    }
+
 

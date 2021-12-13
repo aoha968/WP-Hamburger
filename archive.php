@@ -36,7 +36,6 @@
                                 <div class="wrap__menu__list__detail">
                                     <h2><?php the_title(); ?></h2>
                                     <h3><?php the_excerpt(); ?></h3>
-                                    <p><?php the_content(); ?></p>
                                     <div class="wrap__menu__list__detail__btn">
                                     <a href="<?php the_permalink(); ?>"><button type="button">詳しく見る</button></a>
                                     </div>
@@ -44,6 +43,7 @@
                             </li>
                             <?php   endwhile; ?>
                             <?php else : ?>
+                                <p>投稿はありません</p> <!-- 投稿データがない場合　-->
                             <?php endif; ?>
                         </ul>
                     </div>
