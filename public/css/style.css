@@ -136,12 +136,23 @@ button, input, form {
   background-image: url(../../img/footer.png);
   height: 200px;
 }
-.l-footer li {
-  color: #fff;
+.l-footer__list {
+  display: flex;
+  justify-content: center;
   font-family: "M PLUS 1p", sans-serif;
   font-size: 2.5rem;
-  padding-top: 50px;
+  padding-top: 30px;
   text-align: center;
+}
+.l-footer__list li, .l-footer__list a {
+  color: #fff;
+}
+.l-footer__list li:not(:last-of-type) {
+  padding-right: 0.5em;
+}
+.l-footer__list li:not(:last-of-type)::after {
+  content: "|";
+  margin-left: 0.5em;
 }
 .l-footer address {
   color: #fff;

@@ -1,6 +1,10 @@
 <footer class="l-footer">
-    <ul>
-        <li>ショップ情報　|　ヒストリー</li>
-    </ul>
+    <?php
+                $args = array(
+                'menu' => 'footermenu',
+                'menu_class' => 'l-footer__list',
+                );
+                wp_nav_menu( $args );
+            ?>
     <address>Copyright: RaiseTech</address>
 </footer>

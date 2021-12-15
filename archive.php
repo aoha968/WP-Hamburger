@@ -13,7 +13,7 @@
                     <div class="l-visual -archive">
                         <div class="l-visual -layer"></div>
                         <h2 class="l-visual__title">Menu:
-                            <span>チーズバーガー</span>
+                            <span><?php single_cat_title(); ?></span>
                         </h2>
                     </div>
                     <div class="wrap">
