@@ -47,26 +47,11 @@
                             <?php endif; ?>
                         </ul>
                     </div>
-                    <div class="c-pagenation">
-                        <span class="c-pagenation__pageview">page 1/10</span>
-                        <a class="prev" href="#">
-                            <i class="fas fa-angle-double-left"></i>
-                            <span class="c-pagenation__pagetext">前へ</span>
-                        </a>
-                        <p class="c-pagenation__current c-pagenation__page -page__tab">1</p>
-                        <a class="c-pagenation__page -page__tab" href="#">2</a>
-                        <a class="c-pagenation__page -page__tab"  href="#">3</a>
-                        <a class="c-pagenation__page -page__tab"  href="#">4</a>
-                        <a class="c-pagenation__page -page__tab"  href="#">5</a>
-                        <a class="c-pagenation__page -page__tab" href="#">6</a>
-                        <a class="c-pagenation__page -page__tab" href="#">7</a>
-                        <a class="c-pagenation__page -page__tab" href="#">8</a>
-                        <a class="c-pagenation__page -page__tab" href="#">9</a>
-                        <a class="next" href="#">
-                            <span  class="c-pagenation__pagetext">次へ</span>
-                            <i class="fas fa-angle-double-right"></i>
-                        </a>
-                    </div>
+                    <?php
+                        if ( function_exists( 'pagination' ) ) :
+                            pagination( $wp_query->max_num_pages, get_query_var( 'paged' ) );
+                        endif;
+                    ?>
                 </article>
             </div>
             <?php get_sidebar(); ?>

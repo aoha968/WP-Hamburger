@@ -57,8 +57,24 @@
             display: none;
         }
     }
+    /* 一番後ろのページネーションの時は「＜＜前へ」を左寄せ、「次へ＞＞」は表示されない */
+    .prev__left {
+        margin: auto;
+        margin-left: 0;
+        @include mq('tab') {
+            margin: 0;
+        }
+    }
+    /* 一番最初のページネーションの時は「次へ＞＞」を右寄せ、「＜＜前へ」は表示されない */
+    .next__right {
+        margin: auto;
+        margin-right: 0;
+        @include mq('tab') {
+            margin: 0;
+        }
+    }
     .prev, .next {
         border: none;
-        width: 80px;
+        width: auto;
     }
 }

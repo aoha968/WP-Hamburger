@@ -496,6 +496,8 @@ button, input, form {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+  /* 一番後ろのページネーションの時は「＜＜前へ」を左寄せ、「次へ＞＞」は表示されない */
+  /* 一番最初のページネーションの時は「次へ＞＞」を右寄せ、「＜＜前へ」は表示されない */
 }
 @media screen and (min-width: 600px) {
   .c-pagenation {
@@ -557,9 +559,27 @@ button, input, form {
     display: none;
   }
 }
+.c-pagenation .prev__left {
+  margin: auto;
+  margin-left: 0;
+}
+@media screen and (min-width: 600px) {
+  .c-pagenation .prev__left {
+    margin: 0;
+  }
+}
+.c-pagenation .next__right {
+  margin: auto;
+  margin-right: 0;
+}
+@media screen and (min-width: 600px) {
+  .c-pagenation .next__right {
+    margin: 0;
+  }
+}
 .c-pagenation .prev, .c-pagenation .next {
   border: none;
-  width: 80px;
+  width: auto;
 }
 
 .c-table {
