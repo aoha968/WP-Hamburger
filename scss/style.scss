@@ -23,17 +23,11 @@
 // Component
 // -----------------------------------------------------------------
 
-@use './object/Component/_backquote' as *;
-@use './object/Component/_code' as *;
 @use './object/Component/_error404' as *;
 @use './object/Component/_header__form' as *;
 @use './object/Component/_menu__btn' as *;
-@use './object/Component/_list' as *;
 @use './object/Component/_layer' as *;
 @use './object/Component/_pagenation' as *;
-@use './object/Component/_table' as *;
-@use './object/Component/_tile' as *;
-@use './object/Component/_column' as *;
 
 // -----------------------------------------------------------------
 // Project
