@@ -353,6 +353,7 @@ img {
   background: url("../../img/shop-sp.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
+  margin-bottom: 120px;
 }
 @media screen and (min-width: 600px) {
   .l-visual.-page {
@@ -431,13 +432,13 @@ img {
   color: #fff;
 }
 
-.sad-mac {
+.sad__mac {
   background: #fff;
   margin: 0 auto 7em auto;
   width: 23em;
   height: 30em;
 }
-.sad-mac:before {
+.sad__mac:before {
   content: "";
   display: block;
   width: 1em;
@@ -924,88 +925,42 @@ img {
     width: 90%;
   }
 }
-.posted__title {
-  margin: 30px 0px;
+.posted p {
+  margin-bottom: 34px;
 }
-.posted__title h2 {
+.posted h2 {
   margin-bottom: 30px;
   font-size: 3.6rem;
   font-weight: 600;
 }
-.posted__title h3 {
+.posted h3 {
   font-size: 3.2rem;
   font-weight: 600;
 }
-.posted__title h4, .posted__title h5, .posted__title h6 {
+.posted h4, .posted h5, .posted h6 {
   font-size: 2.8rem;
   font-weight: 600;
 }
-.posted .c-backquote {
+.posted blockquote {
+  font-family: "M PLUS 1p";
+  background: #F5F5F5;
   margin-bottom: 30px;
   padding: 50px;
 }
-.posted .c-backquote p {
-  padding-bottom: 50px;
+.posted ul {
+  padding-inline-start: 40px;
 }
-.posted .c-column li {
-  margin-bottom: 40px;
+.posted ul li {
+  list-style-type: none;
 }
-.posted .c-column li .image {
-  width: 45%;
+.posted ol li {
+  list-style-type: decimal;
 }
-.posted .c-column li .text {
-  width: 55%;
+.posted code {
+  background: #F5F5F5;
+  font-size: inherit;
 }
-.posted .c-column li:nth-child(even) .text {
-  padding-right: 10px;
-}
-.posted .c-column li:nth-child(odd) .text {
-  padding-left: 10px;
-}
-.posted .c-tile__list {
-  margin: 10px 0 10px 0;
-}
-@media screen and (min-width: 600px) {
-  .posted .c-tile__list {
-    width: calc((100% - 20px) / 2);
-  }
-  .posted .c-tile__list:nth-child(2n) {
-    margin: 0 10px 0 10px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .posted .c-tile__list {
-    width: calc((100% - 20px) / 3);
-  }
-  .posted .c-tile__list:nth-child(2n) {
-    margin: 0;
-  }
-  .posted .c-tile__list:nth-child(3n+2) {
-    margin: 0 10px 0 10px;
-  }
-}
-.posted__btn {
-  width: 100%;
-  padding-bottom: 60px;
-}
-.posted__btn button {
-  background-color: #F2EDE9;
-  border: solid 1px;
-  border-radius: 30px;
-}
-.posted__btn button a {
-  display: block;
-  width: 430px;
-  color: #3C2A10;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 100px;
-}
-.posted__text {
-  width: 100%;
-  margin-bottom: 300px;
-}
-.posted__text p {
-  font-size: 20px;
-  font-weight: bold;
+.posted table, .posted tr, .posted th, .posted td {
+  border: 1px #999 solid;
+  border-collapse: collapse;
 }

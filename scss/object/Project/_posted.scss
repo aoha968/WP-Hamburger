@@ -9,91 +9,44 @@
     @include mq('pc') {
         width: 90%;
     }
-    
-    &__title {
-        margin: 30px 0px;
-        h2 {
-            margin-bottom: 30px;
-            font-size: 3.6rem;
-            font-weight: 600;
-        }
-        h3 {
-            font-size: 3.2rem;
-            font-weight: 600;
-        }
-        h4, h5, h6 {
-            font-size: 2.8rem;
-            font-weight: 600;
-        }
+    p {
+        margin-bottom: 34px;
     }
-    .c-backquote {
+    
+    h2 {
+        margin-bottom: 30px;
+        font-size: 3.6rem;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+    h4, h5, h6 {
+        font-size: 2.8rem;
+        font-weight: 600;
+    }
+    blockquote {
+        font-family: "M PLUS 1p";
+        background: #F5F5F5;
         margin-bottom: 30px;
         padding: 50px;
-        p {
-            padding-bottom: 50px;
-        }
     }
-
-    .c-column li {
-        margin-bottom: 40px;
-        .image {
-            width: 45%;
-        }
-        .text {
-            width: 55%;
-        }
-        &:nth-child(even) .text {
-            padding-right: 10px;
-        }
-        &:nth-child(odd) .text {
-            padding-left: 10px;
-        }
+    ul {
+        padding-inline-start: 40px;
     }
-
-    .c-tile {
-        &__list {
-            margin: 10px 0 10px 0;
-            @include mq('tab') {
-                width:calc((100% - 20px) / 2);
-                &:nth-child(2n){
-                    margin: 0 10px 0 10px;
-                }
-            }
-            @include mq('pc') {
-                width:calc((100% - 20px) / 3);
-                &:nth-child(2n){
-                    margin: 0;          // タブレット時のmarginを打ち消し
-                }
-                &:nth-child(3n + 2){
-                    margin: 0 10px 0 10px;
-                }
-            }
-        }
+    ul li {
+        list-style-type: none;
     }
-
-    &__btn {
-        width: 100%;
-        padding-bottom: 60px;
-        button {
-            background-color: #F2EDE9;
-            border: solid 1px;
-            border-radius: 30px;
-            a {
-                display: block;
-                width: 430px;
-                color: #3C2A10;
-                font-size: 16px;
-                font-weight: bold;
-                line-height: 100px;
-            }
-        }
+    ol li {
+        list-style-type: decimal;
     }
-    &__text {
-        width: 100%;
-        margin-bottom: 300px;
-        p {
-            font-size: 20px;
-            font-weight: bold;
-        }
+    code {
+        background: #F5F5F5;
+        font-size: inherit;
+    }
+    table, tr, th, td {
+        border:1px #999 solid;
+        border-collapse: collapse;
     }
 }

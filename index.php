@@ -15,7 +15,8 @@
                     </div>
                     <ul class="p-card">
                         <li class="p-card__list -takeout">
-                            <a href="<?php echo esc_url( home_url('/take-out') ); ?>">
+                            <?php $cat = get_category_by_slug('takeout'); ?>
+                            <a href="<?php echo get_category_link( $cat->cat_ID); ?>">
                                 <h2>Take Out</h2>
                                 <dl>
                                     <dt>Take OUT</dt>
@@ -28,7 +29,8 @@
                             </a>
                         </li>
                         <li class="p-card__list -eatin">
-                            <a href="<?php echo esc_url( home_url('/eat-in') ); ?>">
+                            <?php $cat = get_category_by_slug('eatin'); ?>
+                            <a href="<?php echo get_category_link( $cat->cat_ID); ?>">
                                 <h2>Eat In</h2>
                                 <dl>
                                     <dt>Take OUT</dt>
