@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="<?php language_attributes(); ?>">
     <head>
         <?php get_header(); ?> 
     </head>
-    <body>
+    <body <?php body_class( $class ); ?>>
+        <?php wp_body_open(); ?>
         <main class="l-main">
             <div class="l-main__container">
                 <?php get_template_part('includes/header'); ?>

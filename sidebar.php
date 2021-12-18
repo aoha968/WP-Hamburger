@@ -7,6 +7,7 @@
         wp_nav_menu( array( 
             'menu_id' => 'cateogrymenu',
             'menu_class' => 'c-menu',
+            'theme_location' => '',
             'walker'  => new custom_walker_nav_menu
         ) ); 
     ?>

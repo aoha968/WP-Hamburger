@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="<?php language_attributes(); ?>">
     <head>
         <?php get_header(); ?> 
     </head>
 
-    <body>
+    <body <?php body_class( $class ); ?>>
+        <?php wp_body_open(); ?>
         <main class="l-main">
             <div class="l-main__container">
                 <?php get_template_part('includes/header'); ?>
 
-                <article class="l-main__content">
+                <article <?php post_class('l-main__content'); ?>>
                     <div class="l-visual -archive">
                         <div class="l-visual -layer"></div>
                         <h2 class="l-visual__title">Menu:
@@ -31,7 +32,7 @@
                                 <?php if(has_post_thumbnail()): ?>
                                     <?php the_post_thumbnail('large'); ?>
                                 <?php else: ?>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/archive_contents.png">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/archive_contents.png">
                                 <?php endif; ?>
                                 <div class="wrap__menu__list__detail">
                                     <h2><?php the_title(); ?></h2>

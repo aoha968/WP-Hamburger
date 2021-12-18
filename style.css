@@ -1,5 +1,6 @@
 /*
-Theme Name: WPBEG
+Theme Name: WP-Hamburger
+
 Description: テーマ開発練習用テーマ
 Version: 1.0.0
 Theme URI: https://github.com/aoha968/WP-Hamburger
@@ -9,4 +10,6 @@ Tags: right-sidebar, blog
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: WP-Hamburger
+Tested up to: 5.8.2
+Requires PHP: 7.3.5
 */

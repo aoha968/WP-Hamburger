@@ -321,6 +321,7 @@ img {
 
 .l-visual.-single {
   height: 285px;
+  margin-bottom: 120px;
   background: url("../../img/single-sp.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
