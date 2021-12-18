@@ -388,39 +388,6 @@ img {
   left: 0;
 }
 
-/* 参考サイト：https://webdesignfacts.net/entry/404error-template/#gsc.tab=0 */
-.error__figure {
-  font-size: 6px;
-  padding: 80px;
-  width: 100%;
-  background-color: #000;
-}
-.error__figure .error__text {
-  font-size: 14px;
-  color: #fff;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.error__figure .error__text a {
-  color: #fff;
-}
-
-.sad__mac {
-  background: #fff;
-  margin: 0 auto 7em auto;
-  width: 23em;
-  height: 30em;
-}
-.sad__mac:before {
-  content: "";
-  display: block;
-  width: 1em;
-  height: 1em;
-  transform: translate(-1em, -1em);
-  box-shadow: 1em 1em, 23em 1em, 4em 3em, 5em 3em, 6em 3em, 7em 3em, 8em 3em, 9em 3em, 10em 3em, 11em 3em, 12em 3em, 13em 3em, 14em 3em, 15em 3em, 16em 3em, 17em 3em, 18em 3em, 19em 3em, 20em 3em, 3em 4em, 21em 4em, 3em 5em, 21em 5em, 3em 6em, 7em 6em, 9em 6em, 15em 6em, 17em 6em, 21em 6em, 3em 7em, 8em 7em, 16em 7em, 21em 7em, 3em 8em, 7em 8em, 9em 8em, 15em 8em, 17em 8em, 21em 8em, 3em 9em, 21em 9em, 3em 10em, 10em 10em, 13em 10em, 21em 10em, 3em 11em, 11em 11em, 12em 11em, 21em 11em, 3em 12em, 21em 12em, 3em 13em, 10em 13em, 11em 13em, 12em 13em, 13em 13em, 14em 13em, 21em 13em, 3em 14em, 9em 14em, 15em 14em, 16em 14em, 21em 14em, 3em 15em, 17em 15em, 21em 15em, 3em 16em, 21em 16em, 4em 17em, 5em 17em, 6em 17em, 7em 17em, 8em 17em, 9em 17em, 10em 17em, 11em 17em, 12em 17em, 13em 17em, 14em 17em, 15em 17em, 16em 17em, 17em 17em, 18em 17em, 19em 17em, 20em 17em, 3em 22em, 4em 22em, 5em 22em, 14em 22em, 15em 22em, 16em 22em, 17em 22em, 18em 22em, 19em 22em, 20em 22em, 1em 27em, 2em 27em, 3em 27em, 4em 27em, 5em 27em, 6em 27em, 7em 27em, 8em 27em, 9em 27em, 10em 27em, 11em 27em, 12em 27em, 13em 27em, 14em 27em, 15em 27em, 16em 27em, 17em 27em, 18em 27em, 19em 27em, 20em 27em, 21em 27em, 22em 27em, 23em 27em, 1em 28em, 23em 28em, 1em 29em, 23em 29em, 1em 30em, 23em 30em;
-}
-
 .l-header__menu-btn {
   color: #707070;
   border: none;
@@ -487,94 +454,76 @@ img {
   left: 0;
 }
 
-.c-pagenation {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
-  /* 一番後ろのページネーションの時は「＜＜前へ」を左寄せ、「次へ＞＞」は表示されない */
-  /* 一番最初のページネーションの時は「次へ＞＞」を右寄せ、「＜＜前へ」は表示されない */
-}
-@media screen and (min-width: 600px) {
-  .c-pagenation {
-    justify-content: center;
-  }
-}
-.c-pagenation p {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  border: none;
-  padding: 3px 5px;
-  margin: 6px;
-}
-.c-pagenation__page.-page__tab {
-  display: none;
-}
-@media screen and (min-width: 600px) {
-  .c-pagenation__page.-page__tab {
-    display: flex;
-    justify-content: center;
-  }
-}
-.c-pagenation__current {
-  width: 35px;
-  height: 35px;
-  text-align: center;
-  border: 1px solid #707070;
-  margin-right: 15px;
+.p-access {
+  position: relative;
+  width: 100%;
   color: #fff;
-  background-color: #3C2B1C;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  padding-left: calc(20px + 3%);
+  padding-right: calc(20px + 3%);
 }
-.c-pagenation a {
-  font-family: "Roboto", sans-serif;
+@media screen and (min-width: 1025px) {
+  .p-access {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.p-access iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+}
+.p-access .c-layer.-rear {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -2;
+}
+.p-access .c-layer.-front {
+  width: 100%;
+  height: 60%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+@media screen and (min-width: 600px) {
+  .p-access .c-layer.-front {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-access .c-layer.-front {
+    width: 60%;
+  }
+}
+.p-access__text {
+  font-size: 1.4rem;
+  line-height: 2;
+}
+@media screen and (min-width: 1025px) {
+  .p-access__text {
+    width: 60%;
+    padding: 1%;
+  }
+}
+.p-access__text h2 {
+  position: relative;
+  font-size: 3rem;
   font-weight: bold;
-  color: #707070;
-  width: 35px;
-  height: 35px;
-  text-align: center;
-  border: 1px solid #707070;
-  margin: 6px;
-  padding: 3px 5px;
+  margin-bottom: 40px;
 }
-.c-pagenation__pageview {
-  display: none;
-  margin: 8px;
-}
-@media screen and (min-width: 600px) {
-  .c-pagenation__pageview {
-    width: auto;
-    display: inline-block;
-    white-space: nowrap;
-  }
-}
-.c-pagenation__pagetext {
-  margin: 8px;
-}
-@media screen and (min-width: 600px) {
-  .c-pagenation__pagetext {
-    display: none;
-  }
-}
-.c-pagenation .prev__left {
-  margin: auto;
-  margin-left: 0;
-}
-@media screen and (min-width: 600px) {
-  .c-pagenation .prev__left {
-    margin: 0;
-  }
-}
-.c-pagenation .next__right {
-  margin: auto;
-  margin-right: 0;
-}
-@media screen and (min-width: 600px) {
-  .c-pagenation .next__right {
-    margin: 0;
-  }
-}
-.c-pagenation .prev, .c-pagenation .next {
-  border: none;
-  width: auto;
+.p-access__text h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 75px;
+  height: 3px;
+  background-color: #fff;
+  bottom: -18px;
+  left: 0;
 }
 
 .p-card {
@@ -693,85 +642,140 @@ img {
   margin-bottom: 30px;
 }
 .wrap__menu__list__detail__btn {
-  text-align: center;
-}
-.wrap__menu__list__detail__btn button {
-  font-size: 12px;
-  padding: 20px 60px;
+  display: block;
+  width: 50%;
+  max-width: 163px;
+  background: #fff;
+  color: #707070;
+  font-weight: bold;
   border-radius: 30px;
-  margin-bottom: 40px;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 12px;
+  margin: auto;
 }
 
-.p-access {
-  position: relative;
+/* 参考サイト：https://webdesignfacts.net/entry/404error-template/#gsc.tab=0 */
+.error__figure {
+  font-size: 6px;
+  padding: 80px;
   width: 100%;
+  background-color: #000;
+}
+.error__figure .error__text {
+  font-size: 14px;
   color: #fff;
-  padding-top: 40px;
-  padding-bottom: 50px;
-  padding-left: calc(20px + 3%);
-  padding-right: calc(20px + 3%);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-@media screen and (min-width: 1025px) {
-  .p-access {
-    padding-left: 0;
-    padding-right: 0;
-  }
+.error__figure .error__text a {
+  color: #fff;
 }
-.p-access iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -3;
+
+.sad__mac {
+  background: #fff;
+  margin: 0 auto 7em auto;
+  width: 23em;
+  height: 30em;
 }
-.p-access .c-layer.-rear {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: -2;
-}
-.p-access .c-layer.-front {
-  width: 100%;
-  height: 60%;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: -1;
-}
-@media screen and (min-width: 600px) {
-  .p-access .c-layer.-front {
-    height: 100%;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .p-access .c-layer.-front {
-    width: 60%;
-  }
-}
-.p-access__text {
-  font-size: 1.4rem;
-  line-height: 2;
-}
-@media screen and (min-width: 1025px) {
-  .p-access__text {
-    width: 60%;
-    padding: 1%;
-  }
-}
-.p-access__text h2 {
-  position: relative;
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-.p-access__text h2::after {
+.sad__mac:before {
   content: "";
   display: block;
-  position: absolute;
-  width: 75px;
-  height: 3px;
-  background-color: #fff;
-  bottom: -18px;
-  left: 0;
+  width: 1em;
+  height: 1em;
+  transform: translate(-1em, -1em);
+  box-shadow: 1em 1em, 23em 1em, 4em 3em, 5em 3em, 6em 3em, 7em 3em, 8em 3em, 9em 3em, 10em 3em, 11em 3em, 12em 3em, 13em 3em, 14em 3em, 15em 3em, 16em 3em, 17em 3em, 18em 3em, 19em 3em, 20em 3em, 3em 4em, 21em 4em, 3em 5em, 21em 5em, 3em 6em, 7em 6em, 9em 6em, 15em 6em, 17em 6em, 21em 6em, 3em 7em, 8em 7em, 16em 7em, 21em 7em, 3em 8em, 7em 8em, 9em 8em, 15em 8em, 17em 8em, 21em 8em, 3em 9em, 21em 9em, 3em 10em, 10em 10em, 13em 10em, 21em 10em, 3em 11em, 11em 11em, 12em 11em, 21em 11em, 3em 12em, 21em 12em, 3em 13em, 10em 13em, 11em 13em, 12em 13em, 13em 13em, 14em 13em, 21em 13em, 3em 14em, 9em 14em, 15em 14em, 16em 14em, 21em 14em, 3em 15em, 17em 15em, 21em 15em, 3em 16em, 21em 16em, 4em 17em, 5em 17em, 6em 17em, 7em 17em, 8em 17em, 9em 17em, 10em 17em, 11em 17em, 12em 17em, 13em 17em, 14em 17em, 15em 17em, 16em 17em, 17em 17em, 18em 17em, 19em 17em, 20em 17em, 3em 22em, 4em 22em, 5em 22em, 14em 22em, 15em 22em, 16em 22em, 17em 22em, 18em 22em, 19em 22em, 20em 22em, 1em 27em, 2em 27em, 3em 27em, 4em 27em, 5em 27em, 6em 27em, 7em 27em, 8em 27em, 9em 27em, 10em 27em, 11em 27em, 12em 27em, 13em 27em, 14em 27em, 15em 27em, 16em 27em, 17em 27em, 18em 27em, 19em 27em, 20em 27em, 21em 27em, 22em 27em, 23em 27em, 1em 28em, 23em 28em, 1em 29em, 23em 29em, 1em 30em, 23em 30em;
+}
+
+.c-pagenation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  /* 一番後ろのページネーションの時は「＜＜前へ」を左寄せ、「次へ＞＞」は表示されない */
+  /* 一番最初のページネーションの時は「次へ＞＞」を右寄せ、「＜＜前へ」は表示されない */
+}
+@media screen and (min-width: 600px) {
+  .c-pagenation {
+    justify-content: center;
+  }
+}
+.c-pagenation p {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  border: none;
+  padding: 3px 5px;
+  margin: 6px;
+}
+.c-pagenation__page.-page__tab {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .c-pagenation__page.-page__tab {
+    display: flex;
+    justify-content: center;
+  }
+}
+.c-pagenation__current {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border: 1px solid #707070;
+  margin-right: 15px;
+  color: #fff;
+  background-color: #3C2B1C;
+}
+.c-pagenation a {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #707070;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border: 1px solid #707070;
+  margin: 6px;
+  padding: 3px 5px;
+}
+.c-pagenation__pageview {
+  display: none;
+  margin: 8px;
+}
+@media screen and (min-width: 600px) {
+  .c-pagenation__pageview {
+    width: auto;
+    display: inline-block;
+    white-space: nowrap;
+  }
+}
+.c-pagenation__pagetext {
+  margin: 8px;
+}
+@media screen and (min-width: 600px) {
+  .c-pagenation__pagetext {
+    display: none;
+  }
+}
+.c-pagenation .prev__left {
+  margin: auto;
+  margin-left: 0;
+}
+@media screen and (min-width: 600px) {
+  .c-pagenation .prev__left {
+    margin: 0;
+  }
+}
+.c-pagenation .next__right {
+  margin: auto;
+  margin-right: 0;
+}
+@media screen and (min-width: 600px) {
+  .c-pagenation .next__right {
+    margin: 0;
+  }
+}
+.c-pagenation .prev, .c-pagenation .next {
+  border: none;
+  width: auto;
 }
 
 .posted {

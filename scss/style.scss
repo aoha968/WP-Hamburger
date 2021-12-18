@@ -23,18 +23,18 @@
 // Component
 // -----------------------------------------------------------------
 
-@use './object/Component/_error404' as *;
 @use './object/Component/_header__form' as *;
 @use './object/Component/_menu__btn' as *;
 @use './object/Component/_layer' as *;
-@use './object/Component/_pagenation' as *;
 
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
 
-@use './object/Project/_card' as *;
 @use './object/Project/_access' as *;
+@use './object/Project/_card' as *;
+@use './object/Project/_error404' as *;
+@use './object/Project/_pagenation' as *;
 @use './object/Project/_posted' as *;
 
 // -----------------------------------------------------------------

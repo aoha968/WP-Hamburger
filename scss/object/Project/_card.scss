@@ -113,13 +113,17 @@
                 margin-bottom: 30px;
             }
             &__btn {
+                display: block;
+                width: 50%;
+                max-width: 163px;
+                background: #fff;
+                color: #707070;
+                font-weight: bold;
+                border-radius:30px;
+                padding: 15px 20px;
                 text-align: center;
-                button {
-                    font-size: 12px;
-                    padding: 20px 60px;
-                    border-radius:30px;
-                    margin-bottom: 40px;
-                }
+                font-size: 12px;
+                margin: auto;
             }
         }
     }
