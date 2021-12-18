@@ -41,9 +41,7 @@
                                                 <div class="wrap__menu__list__detail">
                                                     <h2><?php the_title(); ?></h2>
                                                     <h3><?php the_excerpt(); ?></h3>
-                                                    <div class="wrap__menu__list__detail__btn">
-                                                    <a href="<?php the_permalink(); ?>"><button type="button">詳しく見る</button></a>
-                                                    </div>
+                                                    <a class="wrap__menu__list__detail__btn" href="<?php the_permalink(); ?>">詳しく見る</a>
                                                 </div>
                                             </li>
                                         <?php endwhile; ?>
