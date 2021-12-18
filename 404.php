@@ -3,7 +3,7 @@
     <head>
         <?php get_header(); ?> 
     </head>
-    <body <?php body_class( $class ); ?>>
+    <body <?php body_class(); ?>>
         <?php wp_body_open(); ?>
         <main class="l-main">
             <div class="l-main__container">

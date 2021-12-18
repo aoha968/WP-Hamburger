@@ -625,8 +625,11 @@ img {
   }
 }
 .wrap__menu__list__detail {
+  display: flex;
+  flex-direction: column;
   background-color: #3C2B1C;
   color: #fff;
+  padding: 30px 3% 48px 3%;
 }
 .wrap__menu__list__detail h2 {
   padding: 30px;
@@ -653,7 +656,6 @@ img {
   text-align: center;
   font-size: 16px;
   margin: auto;
-  margin-top: 70px;
 }
 
 /* 参考サイト：https://webdesignfacts.net/entry/404error-template/#gsc.tab=0 */
