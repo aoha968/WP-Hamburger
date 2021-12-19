@@ -2,5 +2,5 @@
     <div class="l-header__form__wrap">
         <input type="text" class="l-header__form__search" name="s" id="s" placeholder="キーワードで検索する">
     </div>
-    <button type="submit" name="" class="c-submit__btn" value="">検索</button>
+    <button type="submit" name="" class="c-submit-btn" value="">検索</button>
 </form>
