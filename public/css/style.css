@@ -70,7 +70,7 @@ img {
     align-items: center;
   }
 }
-.l-header__menu-btn {
+.l-header .c-menu-sp-btn {
   font-size: 2.5rem;
   display: block;
   margin-left: auto;
@@ -80,7 +80,7 @@ img {
   cursor: pointer;
 }
 @media screen and (min-width: 1025px) {
-  .l-header__menu-btn {
+  .l-header .c-menu-sp-btn {
     display: none;
   }
 }
@@ -129,7 +129,7 @@ img {
   padding-left: 36px;
   position: relative;
 }
-.l-header__form__btn {
+.l-header__form .c-submit__btn {
   width: 15%;
   height: 46px;
   padding-top: 1px;
@@ -388,24 +388,7 @@ img {
   left: 0;
 }
 
-.l-header__menu-btn {
-  color: #707070;
-  border: none;
-  /* 枠線を消す */
-  outline: none;
-  /* クリックしたときに表示される枠線を消す */
-  background: transparent;
-  /* 背景の灰色を消す */
-}
-.l-header__form__btn {
-  border-radius: 10px;
-  border: solid 1px #707070;
-  color: #707070;
-  background: linear-gradient(#f2ede9 0%, #ded8d3 100%);
-  cursor: pointer;
-}
-
-.c-menu__btn {
+.c-close-btn {
   position: absolute;
   display: block;
   width: 40px;
@@ -419,11 +402,11 @@ img {
   cursor: pointer;
 }
 @media screen and (min-width: 1025px) {
-  .c-menu__btn {
+  .c-close-btn {
     display: none;
   }
 }
-.c-menu__btn span::before {
+.c-close-btn span::before {
   content: "";
   display: block;
   position: absolute;
@@ -435,7 +418,7 @@ img {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
-.c-menu__btn span::after {
+.c-close-btn span::after {
   content: "";
   display: block;
   position: absolute;
@@ -452,6 +435,24 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.c-menu-sp-btn {
+  color: #707070;
+  border: none;
+  /* 枠線を消す */
+  outline: none;
+  /* クリックしたときに表示される枠線を消す */
+  background: transparent;
+  /* 背景の灰色を消す */
+}
+
+.c-submit__btn {
+  border-radius: 10px;
+  border: solid 1px #707070;
+  color: #707070;
+  background: linear-gradient(#f2ede9 0%, #ded8d3 100%);
+  cursor: pointer;
 }
 
 .p-access {

@@ -24,12 +24,12 @@ $(window).resize(function(){
 ========================================*/
 $(function(){
     var sidebar = $(".l-main").find(".l-sidebar");
-    var menu__btn = $(sidebar).find(".c-menu__btn");
+    var menu__btn = $(sidebar).find(".c-close-btn");
 
     /*======================================
     Menuボタン押下時
     ========================================*/
-    $(".l-header__menu-btn").on("click", function() {
+    $(".c-menu-sp-btn").on("click", function() {
         MenuOpen();
     });
 

@@ -12,7 +12,7 @@
         align-items: center;
     }
 
-    &__menu-btn {
+    .c-menu-sp-btn {
         font-size: 2.5rem;
         display: block;
         margin-left: auto;
@@ -67,7 +67,7 @@
             padding-left: 36px;
             position: relative;
         }
-        &__btn {
+        .c-submit__btn {
             width: 15%;
             height: 46px;
             padding-top: 1px;   /* 検索ボックスと上下合わせるための調整用 */
