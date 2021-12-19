@@ -24,6 +24,7 @@
 
 @use './object/Component/_close-btn' as *;
 @use './object/Component/_copyright' as *;
+@use './object/Component/_detail-btn' as *;
 @use './object/Component/_layer' as *;
 @use './object/Component/_menu-sp-btn' as *;
 @use './object/Component/_submit-btn' as *;
@@ -35,6 +36,7 @@
 @use './object/Project/_access' as *;
 @use './object/Project/_card' as *;
 @use './object/Project/_error404' as *;
+@use './object/Project/_item' as *;
 @use './object/Project/_pagenation' as *;
 @use './object/Project/_posted' as *;
 

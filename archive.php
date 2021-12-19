@@ -17,27 +17,27 @@
                             <span><?php single_cat_title(); ?></span>
                         </h2>
                     </div>
-                    <div class="wrap">
-                        <div class="wrap__title">
+                    <div class="item">
+                        <div class="item__title">
                             <h2>小見出しが入ります</h2>
                             <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         </div>
-                        <ul class="wrap__menu">
+                        <ul class="item__menu">
                             <?php
                                 if (have_posts()) :
                                     while (have_posts()) :
                                         the_post();
                             ?>
-                            <li class="wrap__menu__list">
+                            <li class="item__menu__list">
                                 <?php if(has_post_thumbnail()): ?>
                                     <?php the_post_thumbnail('large'); ?>
                                 <?php else: ?>
                                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/archive_contents.png">
                                 <?php endif; ?>
-                                <div class="wrap__menu__list__detail">
+                                <div class="item__menu__list__detail">
                                     <h2><?php the_title(); ?></h2>
                                     <h3><?php the_excerpt(); ?></h3>
-                                    <a class="wrap__menu__list__detail__btn" href="<?php the_permalink(); ?>">詳しく見る</a>
+                                    <a class="c-detail-btn" href="<?php the_permalink(); ?>">詳しく見る</a>
                                 </div>
                             </li>
                             <?php   endwhile; ?>
