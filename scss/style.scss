@@ -2,7 +2,6 @@
 // Foundation
 // ==========================================================================
 @use './foundation/_reset' as *;
-@use './foundation/_variable' as *;
 @use './foundation/_mixin' as *;
 
 // ==========================================================================
@@ -24,6 +23,7 @@
 // -----------------------------------------------------------------
 
 @use './object/Component/_close-btn' as *;
+@use './object/Component/_copyright' as *;
 @use './object/Component/_layer' as *;
 @use './object/Component/_menu-sp-btn' as *;
 @use './object/Component/_submit-btn' as *;

@@ -7,5 +7,5 @@
                 );
                 wp_nav_menu( $args );
             ?>
-    <address>Copyright: RaiseTech</address>
+    <address class="c-copyright">Copyright: RaiseTech</address>
 </footer>

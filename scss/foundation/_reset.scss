@@ -1,5 +1,3 @@
-@use './_variable' as *;
-
 html {
     font-size: 62.5%;
 }
@@ -19,7 +17,7 @@ aside{
     display: block;
 }
 a{
-    color: $text-black;
+    color: #707070;
     text-decoration: none;
 }
 ul {

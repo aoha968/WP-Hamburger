@@ -1,5 +1,3 @@
-@use '../foundation/_variable' as *;
-
 .l-footer {
     font-family:'M PLUS 1p';
     background-image: url(../../img/footer.png);
@@ -12,7 +10,7 @@
         padding-top: 30px;
         text-align: center;
         li, a {
-            color: $text-white;
+            color: #fff;
         }
         li:not(:last-of-type){
             padding-right: .5em;
@@ -22,12 +20,9 @@
             }
         }
     }
-    address {
-        color: $text-white;
-        font-family: 'M PLUS 1p', sans-serif;
-        font-style: normal;
+    .c-copyright {
+        color: #fff;
         font-size: 2rem;
-        text-align: center;
         padding-top: 30px;
     }
 }
