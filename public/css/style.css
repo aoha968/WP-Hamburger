@@ -119,15 +119,11 @@ img {
     text-align: right;
   }
 }
-.l-header__form__search {
+.l-header__form .search-form {
   width: 55%;
   height: 46px;
-  border-radius: 10px;
-  border: 1px solid #707070;
   margin-right: 4px;
-  text-align: left;
   padding-left: 36px;
-  position: relative;
 }
 .l-header__form .c-submit-btn {
   width: 15%;
@@ -458,6 +454,13 @@ img {
   /* クリックしたときに表示される枠線を消す */
   background: transparent;
   /* 背景の灰色を消す */
+}
+
+.search-form {
+  border-radius: 10px;
+  border: 1px solid #707070;
+  text-align: left;
+  position: relative;
 }
 
 .c-submit-btn {

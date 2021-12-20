@@ -56,15 +56,11 @@
         @include mq('pc') {
             text-align:right;
         }
-        &__search {
+        .search-form {
             width: 55%;
             height: 46px;
-            border-radius: 10px;
-            border: 1px solid #707070;
             margin-right: 4px;
-            text-align: left;
             padding-left: 36px;
-            position: relative;
         }
         .c-submit-btn {
             width: 15%;
