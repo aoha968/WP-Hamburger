@@ -18,9 +18,7 @@ $bg-images: (
     'archive-bg-sp': '../../img/page-title_archive-sp.jpg',
     'archive-bg-pc': '../../img/page-title_archive-pc.jpg',
     'shop-bg-sp': '../../img/shop-sp.jpg',
-    'shop-bg-pc': '../../img/shop-pc.jpg',
-    'single-bg-sp': '../../img/single-sp.jpg',
-    'single-bg-pc': '../../img/single-pc.jpg'
+    'shop-bg-pc': '../../img/shop-pc.jpg'
 );
 
 @mixin background($bg-image: main-bg-tab) {

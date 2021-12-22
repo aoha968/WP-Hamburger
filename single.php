@@ -12,9 +12,16 @@
 
                 <article class="l-main__content">
                     <?php if(have_posts()): ?>
+                        <?php
+                            $title_bg = "";
+                            if ( has_post_thumbnail() ) {
+                                $img_url = wp_get_attachment_url( get_post_thumbnail_id() );
+                                $title_bg = "background-image:url(".$img_url.");";
+                            }
+                        ?>
                         <?php while(have_posts()): ?>
                             <?php wp_link_pages(); ?>
-                            <div class="l-visual -single">
+                            <div style="<?php echo $title_bg; ?>" class="l-visual -single">
                                 <?php the_post(); ?>
                                 <h1><?php the_title(); ?></h1>
                             </div>

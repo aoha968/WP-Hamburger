@@ -73,17 +73,14 @@
 .l-visual.-single {
     height: 285px;
     margin-bottom: 120px;
-    @include background("single-bg-sp");
     background-size: cover;
     background-position: center center;
     @include mq('tab') {
         height: 500px;
-        @include background("single-bg-pc");
         background-position: 60% 50%;
     }
     @include mq('pc') {
         height: 500px;
-        @include background("single-bg-pc");
         background-position: center center;
     }
     h1 {
