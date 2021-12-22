@@ -16,7 +16,7 @@
                             $title_bg = "";
                             if ( has_post_thumbnail() ) {
                                 $img_url = wp_get_attachment_url( get_post_thumbnail_id() );
-                                $title_bg = "background-image:url(".$img_url.");";
+                                $title_bg = "background-image:url(".$img_url."); background-size: cover;";
                             }
                         ?>
                         <?php while(have_posts()): ?>

@@ -315,7 +315,6 @@ img {
 .l-visual.-single {
   height: 285px;
   margin-bottom: 120px;
-  background-size: cover;
   background-position: center center;
 }
 @media screen and (min-width: 600px) {

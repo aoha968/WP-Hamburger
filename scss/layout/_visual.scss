@@ -73,7 +73,6 @@
 .l-visual.-single {
     height: 285px;
     margin-bottom: 120px;
-    background-size: cover;
     background-position: center center;
     @include mq('tab') {
         height: 500px;
